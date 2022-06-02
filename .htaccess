@@ -1,0 +1,12 @@
+# removes file extensions from urls
+# remember to run 'sudo a2enmod rewrite' and restart apache
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+
+# environment variables for the project
+# remember to run 'sudo a2enmod env' and restart apache
+SetEnv TEST_ENV pie
