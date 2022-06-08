@@ -1,0 +1,334 @@
+:root {
+    --green: #aea;
+}
+
+.data-entry-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #eee;
+    width: 100%;
+    margin: auto;
+}
+
+.data-entry-part {
+    width: 90%;
+    margin: auto;
+}
+
+.data-entry-label-and-input {
+    display: grid;
+    grid-template-columns: auto 70%;
+    padding: 10px 0px;
+}
+
+.data-entry-wo {
+    grid-template-columns: auto 60%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.data-entry-label-and-input-double {
+    display: grid;
+    grid-template-columns: 30% auto 30% auto;
+    padding: 10px 0px;
+}
+
+.data-entry-label-and-input-double p {
+    margin: auto;
+}
+
+.data-entry-label-and-input-double select,
+.data-entry-label-and-input-double input {
+    width: 100%;
+}
+
+.data-entry-label-and-input p {
+    margin: auto;
+}
+
+.radio-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+.radio-group-wo {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.radio-group-wo .radio-group-item {
+    margin: auto;
+}
+
+.parin_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10px;
+}
+
+.parin_container p {
+    font-weight: bold;
+}
+
+.imgNTHE {
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.inner_tab_container {
+    display: grid;
+    overflow: scroll;
+    max-height: 60vh;
+}
+
+.date_color_box {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    margin: auto;
+    border: 1px solid #999;
+}
+
+#workOrderEditContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+#workOrderInfoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+#workOrderOptionContainer {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+    width: 80%;
+    max-width: 400px;
+}
+
+#workOrderOptionContainer button {
+    margin: auto;
+    width: 75%;
+}
+
+.data-submission-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #eee;
+    width: 100%;
+    margin: auto;
+}
+
+.data-submission-container button {
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.search-tools-container {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#tableStockList,
+#tableGCommList,
+#tableConsoleLog,
+#tableTechList {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.tableStockListButtonContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+.tableStockListButtonContainer button {
+    width: 100%;
+    margin: auto;
+}
+
+.system-modal-data-edit {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.system-edit-double {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.system-modal-data-edit-right {
+    padding-top: 50px;
+}
+
+.pagination li a {
+    color: black;
+}
+
+.pagination li a:focus,
+.pagination li a:hover,
+.pagination li span:focus,
+.pagination li span:hover {
+    color: black;
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.pagination .active .page-link {
+    color: black;
+    background-color: var(--green) !Important;
+    border: solid 1px var(--green) !Important;
+}
+
+.pagination .active a:hover {
+    background-color: var(--green) !Important;
+    border: solid 1px var(--green);
+}
+
+#desktop_video_ports {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#priceTableFilterComboContainer {
+    display: grid;
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 20px;
+    grid-template-columns: 1fr;
+}
+
+#tablePriceList {
+    margin: auto;
+    margin-top: 0px;
+}
+
+#priceListFilterDivider,
+#priceFilterContainer,
+#btnPriceSearch {
+    display: none;
+}
+
+#mobileFilterBtn {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 64px;
+    height: 64px;
+    border: 1px solid black;
+    background-color: var(--green);
+    border-radius: 32px;
+    position: fixed;
+    top: 60px;
+    right: -32px;
+    opacity: .3;
+}
+
+#mobileFilterBtn img {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+#admin_btn_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    margin: auto;
+    width: 90%;
+    max-width: 1024px;
+    padding-top: 50px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .data-entry-part {
+        width: 80%;
+    }
+
+    #desktop-video-port-selector {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #workOrderInfoContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #admin_btn_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .data-entry-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 0px;
+        max-width: 1024px;
+    }
+
+    .data-submission-container {
+        max-width: 1024px;
+    }
+
+    .data-entry-part {
+        width: 90%;
+        margin: auto;
+    }
+
+    .radio-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .radio-group-wo {
+        grid-template-columns: 1fr 1fr;
+        width: 60%;
+    }
+
+    .tableStockListButtonContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .system-modal-data-edit {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .system-edit-double {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .system-modal-data-edit-right {
+        padding-top: 0px;
+    }
+
+    #workOrderEditContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #priceTableFilterComboContainer {
+        grid-template-columns: auto 50px 25%;
+    }
+
+    #priceListFilterDivider,
+    #priceFilterContainer,
+    #btnPriceSearch {
+        display: initial;
+    }
+
+    #mobileFilterBtn {
+        display: none;
+    }
+}
