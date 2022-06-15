@@ -33,6 +33,7 @@
       }
     }
   </style>
+  <?php include_once 'cmp/nav.php'; ?>
   <div class="content-container">
     <div id="carousel_container" style="width: 100%; max-width: 1024px; margin: auto;">
       <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false">
