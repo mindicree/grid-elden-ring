@@ -38,7 +38,7 @@
             <form action="inc/login.inc.php" method='POST' style='margin: auto; width: 100%;'>
                 <div class='label-input'>
                     <p>Username: </p>
-                    <input type="text" name="username">
+                    <input type="text" name="username" value="<?php if (isset($_GET['uid'])) { echo $_GET['uid']; } ?>"></input>
                 </div>
                 <div class='label-input'>
                     <p>Password: </p>
