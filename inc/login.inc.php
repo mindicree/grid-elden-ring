@@ -21,7 +21,7 @@
 
         //if is a valid user, continue to login, otherwise return to login page
         if (!$is_valid_user) {
-            header('location: ../login.php?error=uidnotfound$uid='.$username);
+            header('location: ../login.php?error=uidnotfound&uid='.$username);
             exit();
         } else {
             $db_password = $is_valid_user['pwd'];
@@ -34,7 +34,7 @@
 
         //if all data is valid, login user, otherwise, return to page
         if(!$user_data) {
-            header('location: ../login.php?error=invalid$uid='.$username);
+            header('location: ../login.php?error=invalid&uid='.$username);
             exit();
         } else {
             $login_key = generate_login_key();
@@ -47,7 +47,7 @@
                 $_SESSION['user_key'] = $login_key;
                 $_SESSION['fname'] = $user_data['fname'];
                 $_SESSION['lname'] = $user_data['lname'];
-                header('location: ../index.php?login=logged_in$uid='.$username);
+                header('location: ../index.php?login=logged_in');
                 exit();
             }
         }
