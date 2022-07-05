@@ -38,19 +38,9 @@
         </div>
         <?php 
             if (isset($_SESSION['user_key'])) {
-                echo '<div class="btn-group">
-                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    '.$_SESSION["fname"].'
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">Dashboard</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="inc/logout.inc.php">Logout</a></li>
-                </ul>
-                </div>';
+                include_once 'cmp/user_drop.php';
             } else {
-                echo '<a href="login.php"><button type="button" class="btn btn-outline-success">Login</button></a>';
+                include_once 'cmp/login_btn.php';
             }
         ?>
     </div>
