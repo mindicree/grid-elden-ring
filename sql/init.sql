@@ -8,13 +8,15 @@ CREATE TABLE User (
     fname VARCHAR(255) NOT NULL,
     lname VARCHAR(255) NOT NULL,
     user_id VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
     pwd VARCHAR(255) NOT NULL,
     is_admin BOOLEAN NOT NULL DEFAULT FALSE,
     login_key VARCHAR(255),
     primary_role VARCHAR(255),
     secondary_role VARCHAR(255),
-    employment_status VARCHAR(255)
+    employment_status VARCHAR(255),
+    pref JSON
 );
 
-INSERT INTO User (fname, lname, user_id, pwd, is_admin) VALUES ('Billy', 'Mays', 'test_admin', '$2y$10$clvV7HA0bmgVBjnwZKYJ/OiGFBR.5R/yNSi8KFY7UVBHdhzR32Wru', TRUE);
-INSERT INTO User (fname, lname, user_id, pwd, is_admin) VALUES ('Dick', 'Tracy', 'test_user', '$2y$10$KFUzxGTLxJ2dRnrxSYCBs.wPgxxBlIqGgfkRihqamOnhU195026XG', FALSE);
+INSERT INTO User (fname, lname, user_id, email, pwd, is_admin) VALUES ('Billy', 'Mays', 'test_admin', 'bmays@goodwillsp.org', '$2y$10$clvV7HA0bmgVBjnwZKYJ/OiGFBR.5R/yNSi8KFY7UVBHdhzR32Wru', TRUE);
+INSERT INTO User (fname, lname, user_id, email, pwd, is_admin) VALUES ('Dick', 'Tracy', 'test_user', 'dtracy@goodwillsp.org', '$2y$10$KFUzxGTLxJ2dRnrxSYCBs.wPgxxBlIqGgfkRihqamOnhU195026XG', FALSE);
