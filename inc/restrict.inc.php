@@ -1,5 +1,5 @@
 <?php
-    require_once $_SERVER['DOCUMENT_ROOT'].'/inc/mysql.inc.php';
+    require_once 'mysql.inc.php';
     if (!isset($_SESSION['user_key'])) {
         echo 'session where?';
         header('location: ../login.php');

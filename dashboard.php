@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php include_once 'cmp/head.php'; ?>
-    <?php include_once 'cmp/restrict.php'; ?>
+    <?php include_once 'inc/restrict.inc.php'; ?>
     <title>Dashboard</title>
 </head>
 <body>
