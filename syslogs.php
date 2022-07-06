@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <?php include_once 'cmp/head.php'; ?>
+    <?php include_once 'cmp/head.cmp.php'; ?>
 </head>
 <body>
-    <?php include_once 'cmp/nav.php'; ?>
+    <?php include_once 'cmp/nav.cmp.php'; ?>
     <form onsubmit="return renderSubmission()">
         <input type="text" name="initials" value="" id='initialsSubmit' style="display: none"/>
         <!--Data Entry Table-->

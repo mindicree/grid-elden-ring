@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <?php include_once 'cmp/head.php'; ?>
+    <?php include_once 'cmp/head.cmp.php'; ?>
 </head>
 <body>
     <style>
@@ -31,7 +31,7 @@
             height: min(40vh, 600px);
         }
     </style>
-    <?php include_once 'cmp/nav.php'; ?>
+    <?php include_once 'cmp/nav.cmp.php'; ?>
     <div class='center-container'>
         <div id='login-form-container' style='padding-top: 5vh;'>
             <h3 style='margin: auto;'>Login</h3>

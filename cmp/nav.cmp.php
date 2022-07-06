@@ -38,9 +38,9 @@
         </div>
         <?php 
             if (isset($_SESSION['user_key'])) {
-                include_once 'cmp/user_drop.php';
+                include_once 'cmp/user_drop.cmp.php';
             } else {
-                include_once 'cmp/login_btn.php';
+                include_once 'cmp/login_btn.cmp.php';
             }
         ?>
     </div>
