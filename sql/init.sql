@@ -19,8 +19,7 @@ CREATE TABLE User (
     login_key VARCHAR(255),
     primary_role VARCHAR(255),
     secondary_role VARCHAR(255),
-    employment_status VARCHAR(255),
-    pref JSON
+    employment_status VARCHAR(255)
 );
 
 INSERT INTO User (fname, lname, user_id, email, pwd, is_admin) VALUES ('Billy', 'Mays', 'test_admin', 'bmays@goodwillsp.org', '$2y$10$clvV7HA0bmgVBjnwZKYJ/OiGFBR.5R/yNSi8KFY7UVBHdhzR32Wru', TRUE);
