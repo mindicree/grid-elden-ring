@@ -44,7 +44,7 @@
                 exit();
             } else {
                 session_start();
-                $_SESSION['user_key'] = $login_key;
+                $_SESSION['login_key'] = $login_key;
                 $_SESSION['fname'] = $user_data['fname'];
                 $_SESSION['lname'] = $user_data['lname'];
                 header('location: ../index.php?login=logged_in');

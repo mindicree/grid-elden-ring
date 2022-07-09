@@ -37,7 +37,7 @@
             
         </div>
         <?php 
-            if (isset($_SESSION['user_key'])) {
+            if (isset($_SESSION['login_key'])) {
                 include_once $_SERVER['DOCUMENT_ROOT'].'/cmp/user_drop.cmp.php';
             } else {
                 include_once $_SERVER['DOCUMENT_ROOT'].'/cmp/login_btn.cmp.php';
