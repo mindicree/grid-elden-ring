@@ -4,7 +4,7 @@
 
     //update database
     require_once 'mysql.inc.php';
-    $is_updated = set_user_as_logged_out($db_connection, $_SESSION['user_key']);
+    $is_updated = set_user_as_logged_out($db_connection, $_SESSION['login_key']);
 
     if(!$is_updated) {
         echo 'Error logging out. Please contact support.';
