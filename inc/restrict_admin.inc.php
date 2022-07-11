@@ -20,6 +20,6 @@
 
     // check is user is admin
     if(!$user_data['is_admin']) {
-        echo 'restricted access';
+        header('location: ../err/403.php');
         exit();
     }
