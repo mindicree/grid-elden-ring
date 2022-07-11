@@ -13,4 +13,4 @@ $db_connection = mysqli_connect($db_server, $db_username, $db_password, $db_name
 if (!$db_connection) { die ('Error connecting to database\nMessage: ' . mysqli_connect_error()); }
 
 //include all controllers in the con folder
-foreach(glob("con/*.php") as $controller) { include $controller; }
+require_once 'con/user_controller.php';
