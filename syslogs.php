@@ -4,6 +4,7 @@
     <title>System Log</title>
     <?php include_once 'cmp/head.cmp.php'; ?>
     <?php include_once 'inc/restrict.inc.php'; ?>
+    <?php include_once 'inc/mysql.inc.php'; ?>
 </head>
 <body>
     <?php include_once 'cmp/nav.cmp.php'; ?>
