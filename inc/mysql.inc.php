@@ -14,3 +14,4 @@ if (!$db_connection) { die ('Error connecting to database\nMessage: ' . mysqli_c
 
 //include all controllers in the con folder
 require_once 'con/user_controller.php';
+require_once 'con/comp_type_controller.php';
