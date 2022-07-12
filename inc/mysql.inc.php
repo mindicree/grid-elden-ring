@@ -17,3 +17,4 @@ require_once 'con/user_controller.php';
 require_once 'con/comp_type_controller.php';
 require_once 'con/cpu_controller.php';
 require_once 'con/ram_controller.php';
+require_once 'con/hdd_controller.php';
