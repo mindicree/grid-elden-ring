@@ -110,7 +110,20 @@
                                 ?>
                             </select>
                         </div>
-                        
+                        <!-- CPU Model -->
+                        <div class="data-entry-label-and-input">
+                            <p>CPU Model: </p>
+                            <select name="cpu_model" class="form-select form-select-sm" required disabled>
+                                <option value="" selected disabled hidden>Select One...</option>
+                            </select>
+                        </div>
+                        <!-- CPU Gen -->
+                        <div class="data-entry-label-and-input">
+                            <p>CPU Gen: </p>
+                            <select name="cpu_model" class="form-select form-select-sm" required disabled>
+                                <option value="" selected disabled hidden>Select One...</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </form>
