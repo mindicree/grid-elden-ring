@@ -204,6 +204,19 @@
                         <!-- Tags  -->
                         <div class="data-entry-label-and-input">
                             <p>Tags:</p>
+                            <style>
+                                .tags-select-container {
+                                    display: grid;
+                                    grid-template-columns: 1fr;
+                                }
+
+                                @media only screen and (min-width: 1024px) {
+                                    .tags-select-container {
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr;
+                                    }
+                                }
+                            </style>
                             <div class="tags-select-container">
                                 <?php
                                     $data_list = get_tag_list_active($db_connection);
