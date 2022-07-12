@@ -154,6 +154,21 @@
                                     }
                                 ?>
                             </select>
+                            <!-- HDD -->
+                            <p>HDD: </p>
+                            <select name="hdd" id="" class='form-select form-select-sm' required>
+                                <option value="" selected disabled hidden>Select One...</option>
+                                <?php
+                                    $data_list = get_hdd_list_active($db_connection);
+                                    if(!$data_list) {
+                                        echo '<script> alert("Error when retrieving hdd data");</script>';
+                                    } else {
+                                        foreach($data_list as $data) {
+                                            echo '<option value="'.$data['hdd'].'">'.$data['hdd'].'</option>';
+                                        }
+                                    }
+                                ?>
+                            </select>
                         </div>
                     </div>
                 </div>
