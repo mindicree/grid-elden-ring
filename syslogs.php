@@ -63,6 +63,23 @@
                                 <option value="OS 12 (Monterey)">OS 12 (Monterey)</option>
                             </select>
                         </div>
+                        <!-- Computer Type -->
+                        <div class="data-entry-label-and-input">
+                            <p>Computer: </p>
+                            <select name="computer_type" required>
+                                <option value="" selected disabled hidden>Select One...</option>
+                                <?php
+                                    $comp_type_data = get_comp_type_list_active($db_connection);
+                                    if(!$comp_type_data) {
+                                        echo '<script> alert("Error when retrieving computer type data");</script>';
+                                    } else {
+                                        foreach($comp_type_data as $data) {
+                                            echo '<option value="'.$data['id'].'">'.$data['name'].'</option>';
+                                        }
+                                    }
+                                ?>
+                            </select>
+                        </div>
                     </div>
                     <!-- RIGHT SIDE -->
                     <div class='data-entry-part'>
