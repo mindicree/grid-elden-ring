@@ -138,6 +138,23 @@
                                 ?>
                             </select>
                         </div>
+                        <div class="data-entry-label-and-input-double">
+                            <!-- RAM -->
+                            <p>RAM: </p>
+                            <select name="ram" id="" class='form-select form-select-sm' required>
+                                <option value="" selected disabled hidden>Select One...</option>
+                                <?php
+                                    $data_list = get_ram_list_active($db_connection);
+                                    if(!$data_list) {
+                                        echo '<script> alert("Error when retrieving ram data");</script>';
+                                    } else {
+                                        foreach($data_list as $data) {
+                                            echo '<option value="'.$data['ram'].'">'.$data['ram'].'</option>';
+                                        }
+                                    }
+                                ?>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </form>
