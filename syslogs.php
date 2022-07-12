@@ -99,17 +99,18 @@
                             <select name="cpu_brand" class="form-select form-select-sm" required>
                                 <option value="" selected disabled hidden>Select One...</option>
                                 <?php
-                                    // $comp_type_data = get_comp_type_list_active($db_connection);
-                                    // if(!$comp_type_data) {
-                                    //     echo '<script> alert("Error when retrieving computer type data");</script>';
-                                    // } else {
-                                    //     foreach($comp_type_data as $data) {
-                                    //         echo '<option value="'.$data['id'].'">'.$data['name'].'</option>';
-                                    //     }
-                                    // }
+                                    $data_list = get_cpu_brand_list($db_connection);
+                                    if(!$data_list) {
+                                        echo '<script> alert("Error when retrieving computer type data");</script>';
+                                    } else {
+                                        foreach($data_list as $data) {
+                                            echo '<option value="'.$data['cpu_brand'].'">'.$data['cpu_brand'].'</option>';
+                                        }
+                                    }
                                 ?>
                             </select>
                         </div>
+                        
                     </div>
                 </div>
             </form>
