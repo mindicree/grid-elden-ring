@@ -170,6 +170,19 @@
                                 ?>
                             </select>
                         </div>
+                        <!-- Disk Drive -->
+                        <div class="data-entry-label-and-input">
+                            <p>Disk Drive: </p>
+                            <select name="disk-drive" class='form-select form-select-sm' id="disk-type-selector" required>
+                                <option value="" selected disabled hidden>Select One...</option>
+                                <option value="CD-ROM">CD-ROM</option>
+                                <option value="CD-RW">CD-RW</option>
+                                <option value="DVD-ROM">DVD-ROM</option>
+                                <option value="DVR-RW">DVR-RW</option>
+                                <option value="BLU-RAY">BLU-RAY</option>
+                                <option value="None">None</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </form>
