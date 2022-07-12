@@ -138,7 +138,7 @@
                                 ?>
                             </select>
                         </div>
-                        <div class="data-entry-label-and-input-double">
+                        <div class="data-entry-label-and-input">
                             <!-- RAM -->
                             <p>RAM: </p>
                             <select name="ram" id="" class='form-select form-select-sm' required>
@@ -154,10 +154,28 @@
                                     }
                                 ?>
                             </select>
-                            <!-- HDD -->
-                            <p>HDD: </p>
+                        </div>
+                        <div class="data-entry-label-and-input">
+                            <!-- HDD 1 -->
+                            <p>HDD 1: </p>
+                            <select name="ram" id="" class='form-select form-select-sm' required>
+                                <option value="" selected disabled hidden>Select One...</option>
+                                <?php
+                                    $data_list = get_hdd_list_active($db_connection);
+                                    if(!$data_list) {
+                                        echo '<script> alert("Error when retrieving ram data");</script>';
+                                    } else {
+                                        foreach($data_list as $data) {
+                                            echo '<option value="'.$data['hdd'].'">'.$data['hdd'].'</option>';
+                                        }
+                                    }
+                                ?>
+                            </select>
+                            <!-- HDD 2 -->
+                            <p>HDD 2: </p>
                             <select name="hdd" id="" class='form-select form-select-sm' required>
                                 <option value="" selected disabled hidden>Select One...</option>
+                                <option value="N/A">None</option>
                                 <?php
                                     $data_list = get_hdd_list_active($db_connection);
                                     if(!$data_list) {
@@ -182,6 +200,17 @@
                                 <option value="BLU-RAY">BLU-RAY</option>
                                 <option value="None">None</option>
                             </select>
+                        </div>
+                        <!-- Tags  -->
+                        <div class="data-entry-label-and-input">
+                            <p>Tags:</p>
+                            <div class="tags-select-container">
+                                <div class="tags-option">
+                                    <input class="form-check-input" type="checkbox" value="Webcam" id="tag-webcam">
+                                    <label class="form-check-label" for="flexCheckDefault"> Webcam </label>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
