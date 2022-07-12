@@ -42,7 +42,7 @@
                         <!-- Operating System -->
                         <div class="data-entry-label-and-input">
                             <p>OS: </p>
-                            <select name="os" required>
+                            <select name="os" class="form-select form-select-sm" required>
                                 <option value="" selected disabled hidden>Select One...</option>
                                 <option value="Windows 10 Home">Windows 10 Home</option>
                                 <option value="Windows 10 Pro">Windows 10 Pro</option>
@@ -66,7 +66,7 @@
                         <!-- Computer Type -->
                         <div class="data-entry-label-and-input">
                             <p>Computer: </p>
-                            <select name="computer_type" required>
+                            <select name="computer_type" class="form-select form-select-sm" required>
                                 <option value="" selected disabled hidden>Select One...</option>
                                 <?php
                                     $comp_type_data = get_comp_type_list_active($db_connection);
@@ -83,7 +83,7 @@
                         <!-- Source -->
                         <div class="data-entry-label-and-input">
                             <p>Source: </p>
-                            <select name="source" id="" required>
+                            <select name="source" class="form-select form-select-sm" id="" required>
                                 <option value="" selected disabled hidden>Select One...</option>
                                 <option value="Residential">Residential</option>
                                 <option value="Corporate">Corporate</option>
@@ -93,7 +93,23 @@
                     </div>
                     <!-- RIGHT SIDE -->
                     <div class='data-entry-part'>
-
+                        <!-- CPU Brand Type -->
+                        <div class="data-entry-label-and-input">
+                            <p>CPU Brand: </p>
+                            <select name="cpu_brand" class="form-select form-select-sm" required>
+                                <option value="" selected disabled hidden>Select One...</option>
+                                <?php
+                                    // $comp_type_data = get_comp_type_list_active($db_connection);
+                                    // if(!$comp_type_data) {
+                                    //     echo '<script> alert("Error when retrieving computer type data");</script>';
+                                    // } else {
+                                    //     foreach($comp_type_data as $data) {
+                                    //         echo '<option value="'.$data['id'].'">'.$data['name'].'</option>';
+                                    //     }
+                                    // }
+                                ?>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </form>
