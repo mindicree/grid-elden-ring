@@ -205,11 +205,20 @@
                         <div class="data-entry-label-and-input">
                             <p>Tags:</p>
                             <div class="tags-select-container">
-                                <div class="tags-option">
-                                    <input class="form-check-input" type="checkbox" value="Webcam" id="tag-webcam">
-                                    <label class="form-check-label" for="flexCheckDefault"> Webcam </label>
-                                </div>
-                                
+                                <?php
+                                    $data_list = get_tag_list_active($db_connection);
+                                    if(!$data_list) {
+                                        echo '<script> alert("Error when retrieving hdd data");</script>';
+                                    } else {
+                                        foreach($data_list as $data) {
+                                            $tag_id = 'tag-'.$data['name'];
+                                            echo '<div class="tags-option">';
+                                            echo '<input class="form-check-input" type="checkbox" value="'.$data['tag'].'" id="'.$tag_id.'">';
+                                            echo '<label for="'.$tag_id.'">&nbsp;'.$data['tag'].'</label>';
+                                            echo '</div>';
+                                        }
+                                    }
+                                ?>
                             </div>
                         </div>
                     </div>
