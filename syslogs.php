@@ -118,10 +118,24 @@
                             </select>
                         </div>
                         <!-- CPU Gen -->
-                        <div class="data-entry-label-and-input">
+                        <div class="data-entry-label-and-input-double">
                             <p>CPU Gen: </p>
                             <select name="cpu_model" class="form-select form-select-sm" required disabled>
                                 <option value="" selected disabled hidden>Select One...</option>
+                            </select>
+                            <p>CPU Speed: </p>
+                            <select name="cpu_speed" class="form-select form-select-sm" required>
+                                <option value="" selected disabled hidden>Select One...</option>
+                                <?php
+                                    $data_list = get_cpu_speed_list_active($db_connection);
+                                    if(!$data_list) {
+                                        echo '<script> alert("Error when retrieving computer speed data");</script>';
+                                    } else {
+                                        foreach($data_list as $data) {
+                                            echo '<option value="'.$data['cpu_speed'].'">'.$data['cpu_speed'].'</option>';
+                                        }
+                                    }
+                                ?>
                             </select>
                         </div>
                     </div>
