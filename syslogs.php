@@ -80,6 +80,16 @@
                                 ?>
                             </select>
                         </div>
+                        <!-- Source -->
+                        <div class="data-entry-label-and-input">
+                            <p>Source: </p>
+                            <select name="source" id="" required>
+                                <option value="" selected disabled hidden>Select One...</option>
+                                <option value="Residential">Residential</option>
+                                <option value="Corporate">Corporate</option>
+                                <option value="City of Charlotte">City of Charlotte</option>
+                            </select>
+                        </div>
                     </div>
                     <!-- RIGHT SIDE -->
                     <div class='data-entry-part'>
