@@ -55,8 +55,8 @@ INSERT INTO Tag (name, base_val) VALUES ('Webcam', 10);
 INSERT INTO Tag (name, base_val) VALUES ('HDMI', 10);
 INSERT INTO Tag (name, base_val) VALUES ('Touchscreen', 50);
 INSERT INTO Tag (name, base_val) VALUES ('Bluray', 10);
-INSERT INTO Tag (name, base_val) VALUES ('SSD', 20);
-INSERT INTO Tag (name, base_val) VALUES ('2nd Drive', 20);
+INSERT INTO Tag (name, base_val) VALUES ('SSD (Drive 1)', 20);
+INSERT INTO Tag (name, base_val) VALUES ('SSD (Drive 2)', 20);
 
 SELECT name AS tags FROM Tag;
 
