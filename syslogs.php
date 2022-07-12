@@ -94,7 +94,7 @@
                     <!-- RIGHT SIDE -->
                     <div class='data-entry-part'>
                         <!-- CPU Brand Type -->
-                        <div class="data-entry-label-and-input">
+                        <div class="data-entry-label-and-input-double">
                             <p>CPU Brand: </p>
                             <select name="cpu_brand" class="form-select form-select-sm" required>
                                 <option value="" selected disabled hidden>Select One...</option>
@@ -109,9 +109,6 @@
                                     }
                                 ?>
                             </select>
-                        </div>
-                        <!-- CPU Model -->
-                        <div class="data-entry-label-and-input">
                             <p>CPU Model: </p>
                             <select name="cpu_model" class="form-select form-select-sm" required disabled>
                                 <option value="" selected disabled hidden>Select One...</option>
