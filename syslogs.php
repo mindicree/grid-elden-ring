@@ -9,8 +9,8 @@
 <body>
     <?php include_once 'cmp/nav.cmp.php'; ?>
     <div class='content-container'>
-        <div class='form-container'>
-            <form action="return false">
+        <div class='form-container' style="display: grid;">
+            <form action="" id='syslog_form'>
                 <div class='data-entry-container'>
                     <!-- LEFT SIDE -->
                     <div class='data-entry-part'>
@@ -234,6 +234,7 @@
                     </div>
                 </div>
             </form>
+            <button class="btn btn-success" style="margin: auto; width: min(1024px, 100%)">Submit</button>
         </div>
     </div>
 </body>
